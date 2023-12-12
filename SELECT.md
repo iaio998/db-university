@@ -58,4 +58,8 @@
 
 - ## Da quanti dipartimenti è composta l'università? (12)
 
+  SELECT COUNT(\*) AS 'numero_dipartimenti'
+
+  FROM \`departments`
+
 - ## Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
