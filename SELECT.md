@@ -64,7 +64,7 @@
 
 - ## Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
-  SELECT \*
+  SELECT COUNT(\*) AS 'no_phone_teachers'
 
   FROM \`teachers`
 
