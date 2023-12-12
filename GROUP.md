@@ -23,3 +23,9 @@
   GROUP BY \`exam_id`
 
 - ## Contare quanti corsi di laurea ci sono per ogni dipartimento
+
+  SELECT \`department_id\`, COUNT(\`name\`)
+
+  FROM \`degrees`
+
+  GROUP BY \`department_id`
