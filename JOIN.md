@@ -58,7 +58,7 @@
 
 - ## Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54)
 
-  SELECT \`teachers\`.\`name\`, \`teachers\`.\`surname\`, \`departments\`.\`name\` as \`dipartimento\`
+  SELECT DISTINCT \`teachers\`.\`name\`, \`teachers\`.\`surname\`, \`departments\`.\`name\` as \`dipartimento\`
 
   FROM \`teachers\`
 
