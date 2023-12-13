@@ -42,9 +42,19 @@
 
   JOIN \`departments\` on \`departments\`.\`id\` = \`degrees\`.\`department_id\`
 
-  ORDER BY \`students\`.\`surname\` DESC
+  ORDER BY \`students\`.\`surname\` ASC
 
 - ## Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
+
+  SELECT \`degrees\`.\`name\`, \`courses\`.\`name\`, \`teachers\`.\`name\`, \`teachers\`.\`surname\`
+
+  FROM \`courses\`
+
+  JOIN \`degrees\` on \`degrees\`.\`id\` = \`courses\`.\`degree_id\`
+
+  JOIN \`course_teacher\` ON \`course_teacher\`.\`course_id\` = \`courses\`.\`id\`
+
+  JOIN \`teachers\` on \`teachers\`.\`id\` = \`course_teacher\`.\`teacher_id\`
 
 - ## Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54)
 
